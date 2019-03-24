@@ -53,7 +53,9 @@ def update_ip(ip:str):
 if __name__ == '__main__':
     last_ip = read_last_ip()
     current_ip = get_global_ip()
-    if last_ip == current_ip:sys.exit()
+    if last_ip == current_ip:
+        print("No update")
+        sys.exit()
     login_noip()
     update_ip(current_ip)
     save_ip(current_ip)
