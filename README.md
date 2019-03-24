@@ -14,7 +14,7 @@
 
 `cd NoipUpdater`
 
-`pip install -r requirements.txt `
+`pip3 install -r requirements.txt `
 
 Chromeドライバーをここからダウンロード→ [chrome driver](https://sites.google.com/a/chromium.org/chromedriver/downloads). 下記のディレクトリに`chromedriver`を保存します。
 
@@ -66,7 +66,7 @@ Login Noip then update global ip address.
 
 `cd NoipUpdater`
 
-`pip install -r requirements.txt `
+`pip3 install -r requirements.txt `
 
 Download [chrome driver](https://sites.google.com/a/chromium.org/chromedriver/downloads). Then save chromedrive at below
 

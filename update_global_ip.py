@@ -57,7 +57,9 @@ if __name__ == '__main__':
     login_noip()
     update_ip(current_ip)
     save_ip(current_ip)
-    logging.info("Update to {}".format(current_ip))
+    message = "Update to {}".format(current_ip)
+    logging.info(message)
+    print(message)
     sys.exit()
 
 
