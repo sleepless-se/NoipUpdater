@@ -30,6 +30,12 @@ NoipUpdaterの`update_global_ip.py`を開きます。この行を編集します
 
     email = "noip email"
     password = "noip password"
+    
+Windows の場合はchromedriverのパスを設定してください。
+
+    driver_path="/usr/local/bin/chromedriver"
+
+   
 
 4.実行テスト
 
@@ -81,6 +87,10 @@ Open `update_global_ip.py` in NoipUpdater. Edit this line.
     email = "noip email"
     password = "noip password"
 
+If you are using windows, please set chromedriver path.
+
+    driver_path="/usr/local/bin/chromedriver"
+    
 4.Run test
 
 `python3 ./update_global_ip.py`
