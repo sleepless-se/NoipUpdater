@@ -1,52 +1,4 @@
 # NoipUpdater
-This script update global ip on Noip.
-If ip had change with last ip address.
-Login Noip then update global ip address.
-
-## Environment
-- Python 3.5+
-- Selenium 3.141.0
-
-## Settings
-1.Clone repository
-
-`git clone git@github.com:sleepless-se/NoipUpdater.git`
-
-2.Install Selenium
-
-`cd NoipUpdater`
-
-`pip install -r requirements.txt `
-
-Download [chrome driver](https://sites.google.com/a/chromium.org/chromedriver/downloads). Then save chromedrive at below
-
-Mac / Linux `open /usr/local/bin`
-
-Windos `?`
-
-3.Set Noip login email and password
-
-Open `update_global_ip.py` in NoipUpdater. Edit this line.
-
-    email = "noip email"
-    password = "noip password"
-
-4.Run test
-
-`python3 ./update_global_ip.py`
-
-5 .Set on cron 
-    
-1. Open cron `crontab -e`
-
-1. Add this line `*/10 * * * * /path/to/python3 /path/to/NoipUpdater/update_global_ip.py`
-
-*Note:Please replace as your path.
-
-
----
-
-# NoipUpdater
 Noip に登録しているグローバルIPアドレスが変わっているかを確認して、変更するスクリプトです。
 
 ## 動作環境
@@ -92,3 +44,52 @@ Chromeが起動し現在のIPアドレスをNoipに登録します。
 1. この行を追加します。 `*/10 * * * * /path/to/python3 /path/to/NoipUpdater/update_global_ip.py`
 
 *注意:パスは環境に合わせて設定してください。
+
+
+---
+
+# NoipUpdater
+This script update global ip on Noip.
+If ip had change with last ip address.
+Login Noip then update global ip address.
+
+## Environment
+- Python 3.5+
+- Selenium 3.141.0
+
+## Settings
+1.Clone repository
+
+`git clone git@github.com:sleepless-se/NoipUpdater.git`
+
+2.Install Selenium
+
+`cd NoipUpdater`
+
+`pip install -r requirements.txt `
+
+Download [chrome driver](https://sites.google.com/a/chromium.org/chromedriver/downloads). Then save chromedrive at below
+
+Mac / Linux `open /usr/local/bin`
+
+Windos `?`
+
+3.Set Noip login email and password
+
+Open `update_global_ip.py` in NoipUpdater. Edit this line.
+
+    email = "noip email"
+    password = "noip password"
+
+4.Run test
+
+`python3 ./update_global_ip.py`
+
+5 .Set on cron 
+    
+1. Open cron `crontab -e`
+
+1. Add this line `*/10 * * * * /path/to/python3 /path/to/NoipUpdater/update_global_ip.py`
+
+*Note:Please replace as your path.
+
