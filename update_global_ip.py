@@ -8,6 +8,7 @@ opts = Options()
 
 email = "noip email"
 password = "noip password"
+driver_path="/usr/local/bin/chromedriver"
 last_ip_path = './last_ip.txt'
 browser = None
 
@@ -28,7 +29,7 @@ def read_last_ip():
 
 def login_noip():
     global browser
-    browser = webdriver.Chrome(chrome_options=opts)
+    browser = webdriver.Chrome(executable_path=driver_path,chrome_options=opts)
     noip = "https://my.noip.com/#!/dynamic-dns"
     browser.get(noip)
     time.sleep(3)
