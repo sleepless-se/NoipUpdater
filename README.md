@@ -8,7 +8,7 @@ Noip に登録しているグローバルIPアドレスが変わっているか�
 ## 設定
 1.リポジトリをダウンロード
 
-`git clone git@github.com:sleepless-se/NoipUpdater.git`
+`git clone https://github.com/sleepless-se/NoipUpdater.git`
 
 2.Seleniumをインストール
 
@@ -60,7 +60,7 @@ Login Noip then update global ip address.
 ## Settings
 1.Clone repository
 
-`git clone git@github.com:sleepless-se/NoipUpdater.git`
+`git clone https://github.com/sleepless-se/NoipUpdater.git`
 
 2.Install Selenium
 
