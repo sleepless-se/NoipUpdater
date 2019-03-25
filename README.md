@@ -47,10 +47,10 @@ Chromeが起動し現在のIPアドレスをNoipに登録します。
     
 1. cronを開いて `crontab -e`
 
-1. この行を追加します。 `*/10 * * * * /path/to/python3 /path/to/NoipUpdater/update_global_ip.py`
+1. この行を追加します。 `*/10 * * * * cd /path/to/NoipUpdater; /usr/local/bin/python3 update_global_ip.py `
 
 *注意:パスは環境に合わせて設定してください。
-
+*pythonのパスは `which python3` で確認できます。
 
 ---
 
@@ -99,7 +99,8 @@ If you are using windows, please set chromedriver path.
     
 1. Open cron `crontab -e`
 
-1. Add this line `*/10 * * * * /path/to/python3 /path/to/NoipUpdater/update_global_ip.py`
+1. Add this line `*/10 * * * * cd /path/to/NoipUpdater; /usr/local/bin/python3 update_global_ip.py`
 
 *Note:Please replace as your path.
+*You can check python path by `which python3`
 
